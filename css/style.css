@@ -1,0 +1,186 @@
+/*GENERAL*/
+body{
+    background-color: #d3ebae;
+    font-family: roboto, sans-serif;
+    overflow: hidden;
+}
+
+html,
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+.nav-element{
+    float: left;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 14px;
+    margin-right: 50px;
+    padding-left: 160px;
+    text-decoration: none;
+}
+
+.social-media-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #8cc23a;
+    color: rgb(54, 196, 54);
+    text-align: right;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*MAIN PAGE*/
+.mainHeader {
+    text-align: center;
+    margin: 70px;
+    font-size: 35px;
+}
+
+.mainPageText {
+    text-align: left;
+    margin-left: 60px;
+    font-size: 25px;
+    line-height: 45px;
+}
+
+.column {
+    float: left;
+    width: 45%;
+    padding-left: 25px;
+  }
+
+
+/*MUSIC PAGE*/
+#randomDuckPics{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    height: 60%;
+    border-radius: 10px;
+}
+
+#errorMessage{
+    color: red;
+    background-color: rgb(206, 203, 236);
+}
+
+#dropdownMusic{
+    padding: 15px;
+    width: 50%;
+    font-size: 25px;
+    text-align: center;
+    /* margin-top: 15%; */
+}
+
+#musicSearchButton{
+    padding: 15px;
+    width: 30%;
+    font-size: 25px;
+}
+
+#forMusic{
+    text-decoration: none;
+}
+
+#welcomeToMusic{
+    background-color: #f3f17a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/*RECIPE PAGE*/
+.recipeHeader {
+    text-align: left;
+    margin: 50px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.recipeHeaderIntro {
+    text-align: left;
+    margin: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.recipeInfo {
+    text-align: left;
+    margin: 10px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+}
+
+
+/*CONTACT US PAGE*/
+.contact-us-title{
+    margin-top: 100px;
+    color: black;
+    text-align: center;
+}
+
+.contact-us-title h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 15px;
+    font-family: roboto;
+}
+
+.contact-us-title p{
+    font-size: 27px;
+    font-family: roboto;
+    color: black;
+}
+
+form{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.form-control {
+    text-align: center;
+    width: 550px;
+    border: 1px;
+    outline: 1px;
+    color: black;
+    font-family: roboto;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-bottom: 1px solid black;
+    border-radius: 2.5px;
+}
+
+form .submit{
+    border-color: transparent;
+    color: black;
+    margin: 18px;
+    padding: 10px;
+}
+
+form .submit:hover{
+    background-color: #a39f9b;
+    cursor: pointer;
+}
+
