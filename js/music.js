@@ -62,10 +62,30 @@ function triggerMusic(){
         })
         .then(response => response.json())
         .then(response => {
-            let numSong = Math.floor((Math.random() * 20));
-            let songId = response['items'][numSong]['id']['videoId'];
-            var url = `https://www.youtube.com/watch?v=${songId}`;
-            console.log(response['items'][numSong]['id']['videoId']);
+            let numSong = Math.floor((Math.random() * 17));
+            let songId1 = response['items'][numSong]['id']['videoId'];
+            let songId2 = response['items'][numSong+1]['id']['videoId'];
+            let songId3 = response['items'][numSong+2]['id']['videoId'];
+
+            var url1 = `https://www.youtube.com/embed/${songId1}`;
+            var url2 = `https://www.youtube.com/embed/${songId2}`;
+            var url3 = `https://www.youtube.com/embed/${songId3}`;
+
+            document.getElementById('videos').style.display = "block";
+            document.getElementById('vid1').src = url1;
+            document.getElementById('vid2').src = url2;
+            document.getElementById('vid3').src = url3;
+
+            let name1 = response['items'][numSong]['snippet']['title'];
+            let name2 = response['items'][numSong+1]['snippet']['title'];
+            let name3 = response['items'][numSong+2]['snippet']['title'];
+
+            document.getElementById('youtubeTitle').style.display = "block";
+            document.getElementById('title1').innerHTML = name1;
+            document.getElementById('title2').innerHTML = name2;
+            document.getElementById('title3').innerHTML = name3;
+
+            console.log(response['items'][numSong]['snippet']['title']);
         })
         .catch(err => {
             console.error(err);

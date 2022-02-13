@@ -13,9 +13,9 @@
 
     <nav class="navbar">
         <a class="nav-element" href="frontPage.html">Home</a>
-        <a class="nav-element" href="history.html">History</a>
-        <a class="nav-element" href="music.html">Music</a>
-        <a class="nav-element" href="recipePage.html">Recipes</a>
+        <a class="nav-element" href="duck types.html">All Ducknicity</a>
+        <a class="nav-element" href="music.html">Music To Quack It Out</a>
+        <a class="nav-element" href="recipePage.html">Recipes To Float Better</a>
         <a class="nav-element" href="contactusPage.html">Contact Us</a>
     </nav>
 
@@ -30,54 +30,37 @@
             </p>
         </div>
 
-        <div class="recipeInfo">
-            <div class = "row">
-                <div class="column2">
-                    <h2>Corn with a Ducky Magic</h2>
-                    <h3>
-                        <ol>
-                        <li>Gather 100 gm of corn seeds from the farmer's garden</li>
-                        <li>Boil them until they are soft</li>
-                        <li>Place them on a Leaf plate</li>
-                        <li>Add a pinch of salt to it </li>
-                        <li>Add a pinch of pepper (Aunt OldDuck's magic ingredient!)</li>
-                        <li>Enjoy your meal!</li>
-                        </ol>
-                    </h3>
-                </div>
 
-                <div class="column2">
-                    <h2>Macedonia for Ducks</h2>
-                    <h3>
-                        <ol>
-                        <li>Go to a nearby park to steal 10 grapes</li>
-                        <li>Slice them neatly into 4 pieces each</li>
-                        <li>Decorate them onto a Leaf plate</li>
-                        <li>Add a pinch of pond weed</li>
-                        <li>Enjoy your delicious breakfast!</li>
-                        </ol>
-                    </h3>
-                </div>
-
-                <div class="column2">
-                    <h2>Duck exclusive Fish Soup</h2>
-                    <h3>
-                        <ol>
-                        <li>Hunt a small fresh salmon</li>
-                        <li>Add 15 gm of insects (of your choice!)</li>
-                        <li>Add a pinch of salt</li>
-                        <li>Enjoy the best lunch ever!</li>
-                        </ol>
-                    </h3>
-                </div>
+        <div id="randomDuckFoodPics">
+            <p id="errorMessage"></p>
+            <select id="dropdownRecipe">
+                <option selected="true" disabled= "disabled" value="0">Select more recipes...</option>
+                <option value="corn">Corn with a Ducky Magic</option>
+                <option value="macedonia">Macedonia for Ducks</option>
+                <option value="fish">Duck exclusive Fish Soup</option>
+            </select>
+            <button id="recipeSearchButton">QuackFood</button>
+            <div class="recipeDisplay">
+                <h2 id="container"></h2>
             </div>
-        </div>
-    </div>
 
+            <div class="recipeDisplayInfo">
+                <h3 id="containerText"></h3>
+            </div>
+            
+
+        </div>
+
+        <div class="recipeInfo">
+            <p><i>Find your magic recipe!</i><p>
+        <div>
+
+        
     <footer class = "social-media-footer">
-        <img class="social-media" src="fb-logo" width="50">
-        <img class="social-media" src="ig-logo" width="50">
-        <img class="social-media" src="twitter-logo" width="50">
+        <img class="social-media" src="/images/fb-logo.png" width="50">
+        <img class="social-media" src="/images/ig-logo.png" width="50">
+        <img class="social-media" src="/images/twitter-logo.png" width="50">
     </footer>
+    <script src="/js/recipe.js"></script>
 </body>
 </html>
