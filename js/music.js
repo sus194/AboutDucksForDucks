@@ -7,7 +7,7 @@ function randomPics(){
         "x-user-agent": "desktop",
         "x-proxy-location": "EU",
         "x-rapidapi-host": "google-search3.p.rapidapi.com",
-        "x-rapidapi-key": "b1e1ab1091mshcc9d4bcef44cbf0p1f1095jsn68c0743c6ce6"
+        "x-rapidapi-key": "7a2b213bc5mshc7fd0f47cf2f3e8p1ce969jsn3f470cb49067"
     }
 })
 .then(response => response.json())
